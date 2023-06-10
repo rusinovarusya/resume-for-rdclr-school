@@ -1,0 +1,283 @@
+@import url('https://fonts.cdnfonts.com/css/tt-commons');
+@import url("//db.onlinewebfonts.com/c/f02cf2e6e27a17bcfe9efa18c041c208?family=Redcollar");
+
+
+* {
+  margin: 0;
+}
+
+:root {
+  --main: #000000;
+  --accent: #f51b1b;
+  --white: #ffffff;
+}
+
+
+.main-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  gap: 31px;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 40px;
+  color: var(--white);
+  background-color: var(--main);
+}
+
+
+.logo {
+  position: absolute;
+  top: 24px;
+  right: 40px;
+  display: grid;
+  grid-template-columns: 162px auto 52px;
+  column-gap: 8px;
+  align-items: center;
+}
+
+.collar-rdclr-school {
+  height: 16px;
+  background-image: url("./assets/collar-rdclr-school.png");
+}
+
+.left-arrow {
+  width: 11px;
+  height: 24px;
+  background-image: url("./assets/left-arrow.png");
+}
+
+.front {
+  height: 15px;
+  background-image: url("./assets/front.png");
+}
+
+
+.short-information {}
+
+.photo-container {
+  position: relative;
+  width: 322px;
+  height: 355px;
+  border: 1px solid var(--white);
+}
+
+.photo {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+
+.redcollar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/redcollar.png");
+  background-color: linear-gradient(var(--accent), #ff6262);
+  background-size: 148px 65px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-container {
+  position: relative;
+  margin-top: -48px;
+}
+
+.up-arrow {
+  width: 60px;
+  height: 19px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("./assets/up-arrow.png");
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 24px;
+  background-color: var(--accent);
+  border-radius: 24px 24px 0 0;
+}
+
+
+.main-information {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.name {
+  font-family: "Redcollar";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+
+.age-and-city {
+  font-family: "TT Commons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 0;
+}
+
+.contact-item {
+  display: flex;
+  gap: 11px;
+  list-style: none;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.tel {
+  background-image: url("./assets/phone-call.png");
+}
+.email {
+  background-image: url("./assets/mail.png");
+}
+.telegram {
+  background-image: url("./assets/telegram.png");
+}
+.github {
+  background-image: url("./assets/github.png");
+}
+
+.contact-link {
+  font-family: 'TT Commons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  text-decoration: none;
+}
+
+
+.long-information {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.summary {
+  width: 100%;
+}
+
+.p {
+  width: 690px;
+  font-family: "TT Commons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.background-list {
+  padding-left: 0;
+  border: 1px solid var(--white);
+}
+
+.background-item {
+  display: flex;
+  padding: 48px 28px;
+  gap: 72px;
+  list-style: none;
+}
+
+.background-title {
+  width: 124px;
+  font-family: "Redcollar";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.background-description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 0;
+}
+
+.background-description-item {
+  list-style: none;
+}
+
+.background-description-title,.skill-item {
+  font-family: "TT Commons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.background-description-extra {
+  font-family: "TT Commons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  opacity: 0.4;
+}
+
+.background-description-date {
+  font-family: "TT Commons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  opacity: 0.4;
+}
+
+
+.skills-list {
+  width: 367px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.skill-item {
+  font-family: "TT Commons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  list-style: none;
+}
+
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--white);
+}
