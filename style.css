@@ -10,6 +10,11 @@
   --main: #000000;
   --accent: #f51b1b;
   --white: #ffffff;
+
+  --h1-text: normal 400 24px/28px "Redcollar", sans-serif; 
+  --h2-text: normal 400 16px/100% "Redcollar", sans-serif;
+  --main-text: normal 400 20px/24px "TT Commons", sans-serif;
+  --extra-text: normal 400 18px/24px "TT Commons", sans-serif;
 }
 
 
@@ -63,7 +68,6 @@
 .photo-container {
   position: relative;
   height: 355px;
-  border: 1px solid var(--white);
 }
 
 .photo {
@@ -113,20 +117,12 @@
 }
 
 .name {
-  font-family: "Redcollar";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font: var(--h1-text);
   letter-spacing: -0.02em;
 }
 
 .age-and-city {
-  font-family: "TT Commons";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font: var(--main-text);
   letter-spacing: -0.02em;
 }
 
@@ -165,11 +161,7 @@
 }
 
 .contact-link {
-  font-family: 'TT Commons';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font: var(--main-text);
   letter-spacing: -0.02em;
   color: var(--white);
   text-decoration: none;
@@ -189,11 +181,7 @@
 
 .p {
   width: 690px;
-  font-family: "TT Commons";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font: var(--extra-text);
   letter-spacing: -0.01em;
 }
 
@@ -201,10 +189,6 @@
 .background-container {
   position: relative;
 }
-
-/* .background-container * {
-  border: 1px solid violet;
-} */
 
 .arrow-to-down {
   position: absolute;
@@ -229,11 +213,7 @@
 
 .background-title {
   width: 124px;
-  font-family: "Redcollar";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
+  font: var(--h2-text);
 }
 
 .background-description {
@@ -248,30 +228,12 @@
 }
 
 .background-description-title,.skill-item {
-  font-family: "TT Commons";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font: var(--extra-text);
   letter-spacing: -0.01em;
 }
 
-.background-description-extra {
-  font-family: "TT Commons";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  opacity: 0.4;
-}
-
-.background-description-date {
-  font-family: "TT Commons";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+.background-description-extra, .background-description-date {
+  font: var(--extra-text);
   letter-spacing: -0.01em;
   opacity: 0.4;
 }
@@ -285,11 +247,7 @@
 }
 
 .skill-item {
-  font-family: "TT Commons";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font: var(--extra-text);
   letter-spacing: -0.01em;
   list-style: none;
 }
