@@ -179,7 +179,7 @@
   padding-top: 18px;
 }
 
-.p {
+.paragraph {
   width: 690px;
   font: var(--extra-text);
   letter-spacing: -0.01em;
@@ -210,6 +210,21 @@
   gap: 72px;
   list-style: none;
 }
+
+.background-item:nth-last-child(n+2) {
+  position: relative;
+}
+.background-item:nth-last-child(n+2)::after {
+  content: "";
+  width: 95%;
+  height: 1px;
+  background-color: var(--white);
+  opacity: 0.4;
+
+  position: absolute;
+  bottom: 0;
+}
+
 
 .background-title {
   width: 124px;
