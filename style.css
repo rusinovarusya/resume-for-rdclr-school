@@ -15,11 +15,16 @@
   --h2-text: normal 400 16px/100% "Redcollar", sans-serif;
   --main-text: normal 400 20px/24px "TT Commons", sans-serif;
   --extra-text: normal 400 18px/24px "TT Commons", sans-serif;
+
+  --h1-text-mob: normal 400 20px/24px "Redcollar", sans-serif; 
+  --h2-text-mob: normal 400 16px/100% "Redcollar", sans-serif; /* same */
+  --main-text-mob: normal 400 16px/20px "TT Commons", sans-serif;
+  --extra-text-mob: normal 400 16px/20px "TT Commons", sans-serif;
 }
 
 
 .main-wrapper {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -28,7 +33,9 @@
   display: grid;
   grid-template-columns: 322px auto;
   gap: 31px;
-  width: 1440px;
+  grid-template-areas: "short-information long-information";
+  max-width: 1440px;
+  min-width: 360px;
   margin: 0 auto;
   padding: 40px;
   color: var(--white);
@@ -63,7 +70,9 @@
 }
 
 
-.short-information {}
+.short-information {
+  grid-area: "short-information";
+}
 
 .photo-container {
   position: relative;
@@ -172,15 +181,16 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  grid-area: "long-information";
 }
 
 .summary {
-  width: 100%;
   padding-top: 18px;
 }
 
 .paragraph {
-  width: 690px;
+  max-width: 690px;
   font: var(--extra-text);
   letter-spacing: -0.01em;
 }
@@ -200,31 +210,26 @@
 
 
 .background-list {
+  padding-top: 28px;
   padding-left: 0;
   border: 1px solid var(--white);
 }
 
 .background-item {
-  display: flex;
-  padding: 48px 28px;
-  gap: 72px;
+  padding: 0 28px;
   list-style: none;
 }
 
-.background-item:nth-last-child(n+2) {
-  position: relative;
+.background-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  gap: 72px;
 }
 
-.background-item:nth-last-child(n+2)::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 94%;
-  height: 1px;
-  background-color: var(--white);
-  opacity: 0.4;
+.background-item:nth-last-child(n+2) .background-section {
+  border-bottom: 1px solid var(--white);
 }
-
 
 .background-title {
   width: 124px;
@@ -255,9 +260,10 @@
 
 
 .skills-list {
-  width: 367px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  column-gap: 32px;
   padding-left: 0;
 }
 

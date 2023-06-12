@@ -1,0 +1,104 @@
+@media screen and (max-width: 800px) {
+  .main-container {
+    width: 360px; /* ? */
+    grid-template-columns: auto;
+    grid-template-areas: "short-information" "long-information";
+    gap: 31px; /*?*/
+    margin: 0 auto;
+    padding: 90px 20px 20px;
+  }
+  
+  
+  .logo {
+    left: 20px;
+    right: auto;
+  }
+  
+  .about-container {
+    margin-top: -48px;
+  }
+  
+  .about {
+    gap: 40px;
+    padding: 40px 24px;
+    border-radius: 24px 24px 0 0;
+  }
+  
+  
+  .main-information {
+    gap: 8px;
+  }
+  
+  .name {
+    font: var(--h1-text-mob);
+  }
+  
+  .age-and-city {
+    font: var(--main-text-mob);
+  }
+  
+  
+  .contacts-list {
+    gap: 20px;
+  }
+  
+  .contact-item {
+    gap: 11px;
+  }
+  
+  .contact-link {
+    font: var(--main-text-mob);
+  }
+  
+  
+  .long-information {
+    gap: 32px;
+  }
+  
+  .summary {
+    padding-top: 18px;
+  }
+  
+  .paragraph {
+    font: var(--extra-text-mob);
+  }
+  
+  .arrow-to-down {
+    left: 130px; /* change */
+  }
+  
+  .background-list {
+    padding-top: 20px;
+  }
+
+  .background-item {
+    padding: 0 15px;
+  }
+
+  .background-section {
+    padding: 24px 0;
+    gap: 16px;
+  }
+  
+  
+  .background-title {
+    width: 124px;
+    font: var(--h2-text-mob);
+  }
+  
+  .background-description {
+    gap: 8px;
+  }
+  
+  .background-description-title,.skill-item {
+    font: var(--extra-text-mob);
+  }
+  
+  .background-description-extra, .background-description-date {
+    font: var(--extra-text-mob);
+  }
+  
+  .skill-item {
+    font: var(--extra-text-mob);
+  }
+}
