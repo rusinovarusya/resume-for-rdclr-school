@@ -34,8 +34,7 @@
   grid-template-columns: 322px auto;
   gap: 31px;
   grid-template-areas: "short-information long-information";
-  max-width: 1440px;
-  min-width: 360px;
+  width: 1440px;
   margin: 0 auto;
   padding: 40px;
   color: var(--white);
@@ -181,7 +180,6 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-
   grid-area: "long-information";
 }
 
@@ -228,7 +226,7 @@
 }
 
 .background-item:nth-last-child(n+2) .background-section {
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid #666666;
 }
 
 .background-title {
