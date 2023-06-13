@@ -59,16 +59,20 @@
     gap: 32px;
   }
   
-  .summary {
-    padding-top: 18px;
-  }
-  
   .paragraph {
     font: var(--extra-text-mob);
   }
-  
+
+  .link-to-app {
+    font: var(--main-text-mob);
+  }
+
+  .link-to-git-lab {
+    font: var(--main-text-mob);
+  }
+
   .arrow-to-down {
-    left: 130px; /* change */
+    left: 130px;
   }
   
   .background-list {
