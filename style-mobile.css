@@ -54,6 +54,9 @@
     font: var(--main-text-mob);
   }
   
+  .short-information {
+    height: max-content;
+  }
   
   .long-information {
     gap: 32px;

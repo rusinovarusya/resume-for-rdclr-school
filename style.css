@@ -27,6 +27,7 @@
   display: grid;
   width: 100%;
   min-height: 100vh;
+  background-color: var(--main);
 }
 
 .main-container {
@@ -34,7 +35,7 @@
   display: grid;
   grid-template-columns: 322px auto;
   gap: 31px;
-  grid-template-areas: "short-information long-information";
+  grid-template-areas: "short-information long-information" ". long-information";
   width: 1440px;
   margin: 0 auto;
   padding: 40px;
@@ -72,6 +73,7 @@
 
 .short-information {
   grid-area: "short-information";
+  height: calc(100vh - 80px);
   background-color: var(--accent);
 }
 
@@ -284,4 +286,9 @@
   font: var(--extra-text);
   letter-spacing: -0.01em;
   list-style: none;
+}
+
+.li {
+  font: var(--extra-text);
+  letter-spacing: -0.01em;
 }
